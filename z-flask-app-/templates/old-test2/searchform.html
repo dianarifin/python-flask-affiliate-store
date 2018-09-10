@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block search %}
+        <div class="jumbotron text-center">
+            <h1>Company</h1>
+            <p>
+                We specialize in blablabla
+            </p>
+			<form action="{{ url_for('runMyApp')}}" method="post">
+ search_test: <input type="text" name="search_test">  <br />
+
+<input type="submit" value="Submit" />
+</form>
+        </div>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+<html>
+    <head>
+        <title>formTest Page</title>
+    </head>
+    <body>
+        <form action="{{ url_for('getInput') }}" method="post">
+		First Name: <input type="text" name="first_name">  <br />
+		Last Name: <input type="text" name="last_name" />
+            <input type="text" name="email" />
+            <input type="password" name="password" />
+            {{ form.csrf_token }}
+        </form>
+    </body>
+</html>

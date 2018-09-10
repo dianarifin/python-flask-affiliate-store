@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+  {% for prod in prods %}
+	
+        {#<li><a href="{{ item.href }}">{{ item.caption }}</a></li>#}
+
+  <div class="row">
+  <div class="col-sm-3">
+		<div class="title">{{ prod[0] }}</div>
+		<img class="image" src="{{ prod[1] }}" alt="todo">
+		<div class="price">{{ prod[3] }}</div>
+		<a href="{{ prod[2] }}">link + referal Buy customizr</a>
+		<div>{{ prod[5] }}see on other products</div>
+		<div> TODO promo code</div>    
+		<div class="author">{{ prod[4] }}'</div>
+   </div>
+   </div>
+   
+   
+   
+   
+   
+{% endfor %}
+
+
+{% endblock %}
+
+
+ 

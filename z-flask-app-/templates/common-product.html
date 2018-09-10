@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+  {% for prod in prods %}
+	
+        {#<li><a href="{{ item.href }}">{{ item.caption }}</a></li>#}
+
+  <div class="row">
+  <div class="col-sm-3">
+		<div class="title">{{ prod[0] }}</div>
+		<img class="image" src="{{ prod[1] }}" alt="todo">
+		<div class="price">{{ prod[3] }}</div>
+		<a href="{{ prod[2]|safe }}" target="_blank">link + referal Buy customizr</a>
+		<div>{{ prod[5] }}see on other products</div>
+		<div> TODO promo code</div>    
+		<div class="author">{{ prod[4] }}'</div>
+   </div>
+   </div>
+   
+   
+   
+   
+   
+{% endfor %}
+</div>
+
+THis is my template layout
+
+<!-- start -->
+                <div class="col-sm-3 back20gry">
+                    <h3>This  is my test</h3>
+                    <div class="title">
+                        Scotland Scottish Flag iPad Mini Covers
+                    </div>
+                    <img class="image" src="http://rlv.zcache.com/scotland_scottish_flag_ipad_mini_covers-ra45a7c67ad9745849bc62016ebe110d4_w9k37_8byvr_152.jpg" alt="Paris">
+                    <div class="price">
+                        $54.25 Each
+                    </div>
+                    <a href="'http://www.zazzle.com/scotland_scottish_flag_ipad_mini_covers-256482876920528706">link + referal Buy customizr</a>
+                    <div>
+                        see on other products
+                    </div>
+
+                    <div class="author">
+                        Created by tjk_creative'
+                    </div>
+                    <div>
+                        promo cde
+                    </div>
+
+                </div>
+                <!--end -->
+
+
+{% endblock %}
+
+
+ 
